@@ -160,5 +160,30 @@ const vegzas = [
 ]
 
 // Part 1 - Find the total age of male coders under 25
+
+
+function maleCodersUnderTwentyFive(arr) {
+  let filtered = arr.filter(n => n.gender === "m")
+  return filtered.map( n => n.age).reduce((n, acc) => n+ acc, 0)
+}
+
+console.log(maleCodersUnderTwentyFive(vegzas))
+
 // Part 2 - List all male coders over 30
+
+
+function maleCodersOverThirty(arr) {
+  return arr.filter(n => n.age > 30 )
+}
+
+console.log(maleCodersOverThirty(vegzas))
+
 // Part 3 - Find the total age of everyone in texasss, newieyork and vegzas combined.
+
+function findTotalAge(arr) {
+  return arr.map(n => n.age).reduce((n, acc) => n + acc, 0)
+}
+
+let totalAge = findTotalAge(texasss) + findTotalAge(newieyork) + findTotalAge(vegzas)
+
+console.log(totalAge)
