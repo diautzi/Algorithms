@@ -39,7 +39,21 @@ function olderThanTwentyFour(arr) {
 
 console.log(olderThanTwentyFour(texasss))
 // Part 2 - Find the total age of all users
+
+function totalAge(arr) {
+  return arr.map( n => n.age).reduce((n, acc) => n + acc, 0)
+}
+console.log(totalAge(texasss))
+
 // Part 3 - List all female coders
+
+
+function femaleCoders(arr) {
+  return arr.filter(n => n.gender === "f")
+}
+
+console.log(femaleCoders(texasss))
+
 
 
 // ARRAY 2
@@ -82,7 +96,18 @@ const newieyork = [
 ]
 
 // Part 1 - List all users in US in ascending order
+
+
+function usUsers(arr) {
+  return arr.filter(n => n.us === true).sort((a, b) => a - b ? -1 : 1 )
+}
+
+console.log(usUsers(newieyork))
+
+
 // Part 2 - Sort all users by age
+
+
 // Part 3 -  List all female coders
 
 
