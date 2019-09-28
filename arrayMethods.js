@@ -107,8 +107,22 @@ console.log(usUsers(newieyork))
 
 // Part 2 - Sort all users by age
 
+function sortedByAge(arr) {
+  return arr.sort((a, b) => (a - b) ? -1 : 1 )
+}
+
+console.log(sortedByAge(newieyork))
+
+
 
 // Part 3 -  List all female coders
+
+function femaleCodersList(arr) {
+  let filtered = arr.filter(n => n.gender === "f")
+  return filtered.map( n => n.name)
+}
+
+console.log(femaleCodersList(newieyork))
 
 
 // ARRAY 3
