@@ -11,5 +11,14 @@ Output: [1,2,4]
 Explanation: The array represents the integer 123 **/
 
 function plusOne(digits) {
-     return (parseInt(digits.join("")) + 1).toString().split(",")
-}
+    for (let i = digits.length-1; i>=0; i--) {
+        digits[i]++;
+        if (digits[i] > 9) {
+            digits[i] = 0;
+        } else {
+            return digits;
+        }
+    }
+    digits.unshift(1);
+    return digits;
+};
