@@ -20,7 +20,7 @@ var singleNumber = function (nums) {
     return nums.reduce((a, b) => a ^ b);
 };
    
- /** using sort and for loop **/ 
+ /** using sort and for loop  **/ 
  
 var singleNumber = function(nums) {
             nums.sort();
