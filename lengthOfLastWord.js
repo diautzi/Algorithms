@@ -6,22 +6,25 @@ Note: A word is defined as a character sequence consists of non-space characters
 
 
  */
+
+var lengthOfLastWord = function(s) {
+    let arr = s.trim().split("").reverse();
+    let i = 0;
+    while(arr[i] != ' ' && i < arr.length){
+        i++;
+    }
+    return i;
+};  
+
+
+/**  OR 
 var lengthOfLastWord = function(s) {
     if(s.length>0) {
         return (s.slice(s.lastIndexOf(" ")).length -1)
     }
     
     return 0;
-};
+}; **/
 
 
 
-/**  using while loop 
-var lengthOfLastWord = function(s) {
-    let arr = s.trim().split("").reverse();
-    let i = 0, len = arr.length;
-    while(arr[i] != ' ' && i < len){
-        i++;
-    }
-    return i;
-};  **/
