@@ -13,3 +13,15 @@ var lengthOfLastWord = function(s) {
     
     return 0;
 };
+
+
+
+/**  using while loop 
+var lengthOfLastWord = function(s) {
+    let arr = s.trim().split("").reverse();
+    let i = 0, len = arr.length;
+    while(arr[i] != ' ' && i < len){
+        i++;
+    }
+    return i;
+};  **/
