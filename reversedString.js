@@ -13,7 +13,10 @@ Output: ["o","l","l","e","h"]
 Example 2:
 
 Input: ["H","a","n","n","a","h"]
-Output: ["h","a","n","n","a","H"]   **/
+Output: ["h","a","n","n","a","H"]  
+**/
+
+// ES6 solution //
 
 var reverseString = function(s) {
    return s.split("").reverse()
@@ -24,7 +27,7 @@ In this approach, two pointers are used to process two array elements at the sam
   1.Set pointer left at index 0, and pointer right at index n - 1, where n is a number of elements in the array.
   2.While left < right:
   3.Swap s[left] and s[right].
-  4.Move left pointer one step right, and right pointer one step left.
+  4.Move left pointer one step right, and right pointer one step left. **/
 
 
 var reverseString = function(s) {
