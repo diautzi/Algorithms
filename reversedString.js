@@ -19,3 +19,21 @@ var reverseString = function(s) {
    return s.split("").reverse()
 };
 
+/** Two Pointers Approach 
+In this approach, two pointers are used to process two array elements at the same time. Usual implementation is to set one pointer in the beginning and one at the end and then to move them until they both meet.
+  1.Set pointer left at index 0, and pointer right at index n - 1, where n is a number of elements in the array.
+  2.While left < right:
+  3.Swap s[left] and s[right].
+  4.Move left pointer one step right, and right pointer one step left.
+
+
+var reverseString = function(s) {
+    let left = 0; 
+    let right = s.length - 1;
+    while (left < right) {
+         let tmp = s[left];
+            s[left++] = s[right];
+            s[right--] = tmp;
+    }
+ }
+ 
