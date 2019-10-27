@@ -1,11 +1,11 @@
-/** 
-Complete the function compareTriplets in the editor below. It must return an array of two integers, the first being Alice's score and the second being Bob's.
 
-compareTriplets has the following parameter(s):
+// Complete the function compareTriplets in the editor below. It must return an array of two integers, the first being Alice's score and the second being Bob's.
+//
+// compareTriplets has the following parameter(s):
+//
+// a: an array of integers representing Alice's challenge rating
+// b: an array of integers representing Bob's challenge rating
 
-a: an array of integers representing Alice's challenge rating
-b: an array of integers representing Bob's challenge rating
-**/
 
 function compareTriplets(a, b) {
     let result = [0, 0];
@@ -29,6 +29,6 @@ function compareTriplets(a, b) {
             //          if (char < a[i]) {
             //              result [1] += 1
             //          }
-            //  } 
+            //  }
      return result;
  }
