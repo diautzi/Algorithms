@@ -186,4 +186,4 @@ function findTotalAge(arr) {
 
 let totalAge = findTotalAge(texasss) + findTotalAge(newieyork) + findTotalAge(vegzas)
 
-console.log(totalAge)
+// console.log(totalAge)
