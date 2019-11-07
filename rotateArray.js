@@ -6,3 +6,14 @@ var rotate = function(nums, k) {
     }
 };
 
+function reverseArray(arr) {
+  var newArray = [];
+  for (var i = arr.length - 1; i >= 0; i--) {
+    newArray.push(arr[i]);
+  }
+  return newArray;
+}
+
+// let ar = [1,2,3,4]
+// reverseArray(ar)  =>  [ 4, 3, 2, 1 ]
+
