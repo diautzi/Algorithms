@@ -15,7 +15,7 @@ function aVeryBigSum(ar) {
     return ar.reduce((acc, cur) => acc + cur);
 }
 
-// using for loop 
+// using for loop //////
 
 
 function aVeryBigSum(ar) {
