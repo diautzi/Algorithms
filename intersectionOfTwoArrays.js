@@ -17,6 +17,16 @@ const intersect = (nums1, nums2) =>
   nums1.filter(item => (
     nums2.includes(item) ? nums2.splice(nums2.indexOf(item), 1): false
   ));
+
+
+// var array_intersection = array_first.filter(function(x) {
+// 	// checking second array contains the element "x"
+// 	if(array_second.indexOf(x) != -1)
+// 		return true;
+// 	else
+// 		return false;
+// });
+
   
   /** sorting array
   var intersect = function(nums1, nums2){
