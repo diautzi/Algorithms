@@ -52,6 +52,7 @@ function femaleCoders(arr) {
   return arr.filter(n => n.gender === "f")
 }
 
+
 console.log(femaleCoders(texasss))
 
 
