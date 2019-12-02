@@ -1,2 +1,2 @@
 
-Solving algorithms from leetCode.com
+Solving algorithms from LeetCode.com && HackerRanck.com
