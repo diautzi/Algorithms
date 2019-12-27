@@ -12,4 +12,4 @@ function peakIndexInMountainArray(array) {
     }
     return -1;
 };
-// peakIndexInMountainArray(array) => result: 1
+
