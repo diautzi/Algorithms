@@ -8,3 +8,9 @@
 var mySqrt = function(x) {
     return Math.floor(Math.sqrt(x))
 };
+
+///////////////OR//////////////
+
+var mySqrt = function(x) {
+  return parseInt(Math.sqrt(x))
+}
