@@ -12,3 +12,12 @@ function removeDupl(str) {
   return arr.join(""); 
 }
 
+/////////////////using Set /////////////
+
+
+function removeDupl(str) {
+  let arr = str.split("")
+  set = new Set([...arr])
+  console.log(set)
+  return [...set].join(""); 
+}
