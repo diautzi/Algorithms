@@ -5,11 +5,9 @@
 // Given an array that is definitely a mountain, return any i such that A[0] < A[1] < ... A[i-1] < A[i] > A[i+1] > ... > A[A.length - 1].
 
 let array = [0,2,1,0]
-function peakIndexInMountainArray(array) {
-    if (!array.length) return -1;
-    for (let i = 1; i < array.length - 1; i++) {
-        if (array[i - 1] < array[i] && array[i + 1] < array[i]) return i;
-    }
-    return -1;
+const peakIndexInMountainArray = (arr) => {
+    for(let i = 0; i < arr.length; i++) {
+      if (arr[i] > arr[i+1]) return i;
+    };
 };
 
