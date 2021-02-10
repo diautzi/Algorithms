@@ -1,4 +1,16 @@
-function makeDiamond(letter){ 
+// Exemple:
+    // ----A----
+    // ---B-B---
+    // --C---C--
+    // -D-----D-
+    // E-------E
+    // -D-----D-
+    // --C---C--
+    // ---B-B---
+    // ----A----
+
+
+function makeDiamond(letter) { 
     let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let indexOfLastLetter = letters.indexOf(letter);
     let topDiamond = [];
