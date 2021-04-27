@@ -37,3 +37,20 @@ function isPalindrome(string, i=0) {
 }
 
 isPalindrome('abcdcba')
+
+// Fourth Solution using pointers 
+// o(n) time 
+// o(1) space - constant space, nothing depends on the size of the input string in this solution
+
+function isPalindrome(string){
+  let leftIdx = 0;
+  let rightIdx = string.length -1;
+  while (leftIdx < rightIdx) {
+    if (string[leftIdx] != string[rightIdx] ) return false;
+    leftIdx +=1;
+    rightIdx -= 1
+  }
+  return true
+};
+
+isPalindrome('abcdcba')
